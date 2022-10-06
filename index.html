@@ -35,6 +35,11 @@
     body{
       
     }
+    #canvas{
+      width: 640px;
+      height: 480px;
+      background: #fff;
+      }
   </style>
   <a href="https://atyapi.github.io/tyapimaru/"><h2><li>PageTop</li></h2></a>
   <a href="https://scratch.mit.edu/users/atyapi-FX/"><h2><li>Scratch</li></h2></a>
@@ -44,14 +49,15 @@
   
   <p class="smalltytle">⬇︎アチャピのQ&Aコーナー!</p>
   <a href="https://atyapi.github.io/Tyapimaru2/"><p class="myurl">ここをクリック！</p></a>
+  
+  <canvas id="canvas"></canvas>
+  
+  <script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(0, 0, 500, 500);
+  </script>
+  
 </body>
-<script>
-  const cs = document.createElement('canvas');
-  const ctx = cs.getContext('2d');
-  cs.width = WindowWidth;
-  cs.height = WindowHeight;
-  document.body.appendChild(cs);
-  ctx.fillStyle = 'blue';
-  ctx.fillRect(0, 0, 500, 500);
-</script>
 </html>
