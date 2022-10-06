@@ -44,12 +44,14 @@
   <p class="smalltytle">⬇︎アチャピのQ&Aコーナー!</p>
   <a href="https://atyapi.github.io/Tyapimaru2/"><p class="myurl">ここをクリック！</p></a>
 </body>
-  <script>
-    function setup(){
-      CreateCanvas(WindowWeight,WindowHeight);
-    }
-    function drow{
-      background(255,0,0);
-    }
-  </script>
+<script>
+  const cs = document.createElement('canvas');
+  const ctx = cs.getContext('2d');
+  cs.width = WindowWidth;
+  cs.height = WindowHeight;
+  document.body.appendChild(cs);
+  function drow{
+    background(255,0,0);
+  }
+</script>
 </html>
